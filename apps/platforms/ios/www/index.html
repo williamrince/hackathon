@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>prototype</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<link rel="shortcut icon" href="images/favicon.png" type="image/png">-->
+<link rel="stylesheet" type="text/css" href="css/fonts/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/apps.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
+</head>
+<body>
+<main id="main">
+	<section id="front-page" class="section">
+		<div class="mobile-container">
+			<div class="row">
+				<header class="header merah">
+				<div class="logo">Layar Berita</div>
+				</header>
+			</div>
+			<div class="row content-top">
+				<div class="search-container">
+					<!-- begin: search -->
+					<div id="search">
+						<div class="search">
+							<span class="icon-search"></span>
+							<input type="search" value="Cari konten menarik?" onfocus="this.value = this.value=='Cari konten menarik?'?'':this.value;" onblur="this.value = this.value==''?'Cari konten menarik?':this.value;" onkeyup="cari(this.value);" onchange="cari(this.value);" />
+						</div>
+					</div>
+					<!-- end: search -->
+				</div>
+			</div>
+			<div class="row content-main">
+				<div display="none" class="wrapper-content">
+					<li class="card in-view slide-up">
+						<div class="row content-each clearfix keyword">
+							<div class="wrapper-list clearfix">
+								<div class="col thumbnail number">
+									<h2>1</h2>
+								</div>
+								<div class="col title-keyword keyword-satu">
+									<a href="detail-gajah-mati.html">
+										<h2>Gajah Mati</h2>
+									</a>
+								</div>
+							</div>
+							<ul class="breadcrumbs clearfix">
+								<li><a href="detail-gajah-mati.html">Detail</a></li>
+								<li><a href="detail-video-gajah-mati.html">Tonton</a></li>
+							</ul>
+						</div>
+					</li>
+					
+					<li class="card in-view slide-up">
+						<div class="row content-each clearfix keyword">
+							<div class="wrapper-list clearfix">
+								<div class="col thumbnail number">
+									<h2>2</h2>
+								</div>
+								<div class="col title-keyword keyword-dua">
+									<a href="detail-pilgub-dki.html">
+										<h2>Pilgub DKI</h2>
+									</a>
+								</div>
+							</div>
+							<ul class="breadcrumbs clearfix">
+								<li><a href="detail-pilgub-dki.html">Detail</a></li>
+								<li><a href="detail-video-pilgub-dki.html">Tonton</a></li>
+							</ul>
+						</div>
+					</li>
+					
+					<li class="card in-view slide-up">
+						<div class="row content-each clearfix keyword">
+							<div class="wrapper-list clearfix">
+								<div class="col thumbnail number">
+									<h2>3</h2>
+								</div>
+								<div class="col title-keyword keyword-tiga">
+									<a href="detail-bahaya-pki.html">
+										<h2>Bahaya PKI</h2>
+									</a>
+								</div>
+							</div>
+							<ul class="breadcrumbs clearfix">
+								<li><a href="detail-bahaya-pki.html">Detail</a></li>
+								<li><a href="detail-video-bahaya-pki.html">Tonton</a></li>
+							</ul>
+						</div>
+					</li>
+				
+				<!--<li class="card in-view slide-up">
+					<div class="row content-each clearfix keyword">
+						<div class="col thumbnail number">
+							<h2>4</h2>
+						</div>
+						<div class="col title-keyword keyword-empat">
+							<a href="detail-panama-papers.html">
+								<h2>Panama Papers</h2>
+							</a>
+						</div>
+					</div>
+				</li>-->
+				</div>
+			</div>
+	</section>
+</main>
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/typed.js"></script>
+<script src="js/main.js"></script>
+<script>
+function cari(a)
+{
+	if(a == "panama papers")
+	{
+		window.location="hasil-pencarian.html";
+	}
+}
+</script>
+</body>
+</html>
